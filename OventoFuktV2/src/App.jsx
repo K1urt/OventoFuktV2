@@ -1,16 +1,20 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import ScrollToTop from "./components/ScrollToTop";
+import Header from "./components/header/Header";
+
+import Home from "./pages/home/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Employees from "./pages/Employees";
-import Header from "./components/header/Header";
+
 import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
         <Routes>
           <Route

@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--Primary-color);
+  .logo {
+    &.logoLg {
+      display: none;
+    }
+  }
+
+  .navbarLogo {
+    /* background-color: red; */
+  }
+  .navbarLinks {
+    display: none;
+    gap: 1.5rem;
+    a {
+      text-decoration: none;
+      color: var(--Primary-color);
+      font-size: 1.5rem;
+      &:hover {
+         text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    .logo {
+      &.logoMob {
+        display: none;
+      }
+      &.logoLg {
+        display: block;
+      }
+    }
+    .navbarLinks {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+}

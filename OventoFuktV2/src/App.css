@@ -1,1 +1,57 @@
 @import "/src/Reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+html {
+  scroll-behavior: smooth;
+  margin: 0 0.75rem;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 1.5rem;
+  }
+  @media screen and (min-width: 1024px) {
+    margin: 0 2rem;
+  }
+  @media screen and (min-width: 1440px) {
+    margin: 0 4rem;
+  }
+}
+
+:root {
+  font-family: "Source Serif 4", serif;
+  overflow-x: hidden;
+  text-wrap: pretty;
+  --Primary-color: #062c65;
+  --Secondary-color: #ffffff;
+  --Tertiary-bg-color: #888888;
+  --Text-color: #062c65;
+  --Call-to-Action-color: #ffffff;
+  --Text-line-height: 1.5;
+}
+
+/* Responsiva titlar */
+.title {
+  line-height: 1.5;
+  color: var(--Text-color);
+  font-weight: bold;
+  &.h1 {
+    font-size: clamp(2.25rem, 2.25rem + 1.5vw, 3rem); /* 36px till 48px mobilt */
+    @media screen and (min-width: 1024px) {
+      font-size: 4rem; /* 64px på större skärmar */
+    }
+  }
+
+  &.h2 {
+    font-size: clamp(1.5rem, 1rem + 1.5vw, 2rem); /* 24px till 32px mobilt */
+
+    @media screen and (min-width: 768px) {
+      font-size: clamp(2.5rem, 2rem + 1.5vw, 3rem); /* 40px till 48px */
+    }
+  }
+
+  &.h3 {
+    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem); /* 18px till 24px mobilt */
+
+    @media screen and (min-width: 768px) {
+      font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem); /* 20px till 24px */
+    }
+  }
+}
