@@ -1,0 +1,29 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Fuktmätning",
+      "text": "Fuktmätning för att identifiera problemkällor med fastställande av omfattning samt åtgärdsförslag."
+    },
+    {
+      "id": 2,
+      "title": "Avfuktning",
+      "text": "Effektiv skadetorkning med modern och energisnål avfuktningsteknik samt permanent installation och service av avfuktare i källare och krypgrunder."
+    },
+    {
+      "id": 3,
+      "title": "Utredningar",
+      "text": "Utredning av inomhusmiljön med fokus på fuktproblem som markfukt underifrån eller fukt utifrån samt rådgivning med konkreta åtgärdsförslag."
+    },
+    {
+      "id": 4,
+      "title": "Mikrobiell provtagning",
+      "text": "Materialprovtagning och installation av luftanalysutrustning för att identifiera mögel, bakterier och andra dolda problem i din fastighet där proverna skickas till det ackrediterade laboratoriet Eurofins för noggrann analys"
+    },
+    {
+      "id": 5,
+      "title": "Statusbesiktning: Badrum och kök",
+      "text": "En statusbesiktning är en förebyggande åtgärd för att identifiera eventuella uppkomna skador, dolda risker, bedöma kvarvarande teknisk livslängd på våtrum samt upptäcka eventuella brister i köksmiljöer innan de leder till kostsamma skador."
+    }
+  ]
+}

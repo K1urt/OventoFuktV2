@@ -1,0 +1,50 @@
+.services {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--Primary-color);
+  line-height: var(--Text-line-height);
+
+  /* Gemensam maxbredd eller styrning för innehållet */
+  max-width: 1400px;
+  margin-inline: auto;
+
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    p {
+      max-width: 440px; /* Lagom läsbredd för ingressen */
+    }
+  }
+
+  .serviceContainer {
+    width: clamp(296px, 100%, 411px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(296px, 1fr));
+    gap: 3rem 2rem;
+  }
+
+  /* Gör så att rubriken alltid täcker hela översta raden */
+  .infoContainer {
+    grid-column: 1 / -1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .services {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .services {
+    grid-template-columns: repeat(3, minmax(296px, 1fr));
+    gap: 5rem 3rem;
+  }
+}

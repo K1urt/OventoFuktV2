@@ -6,20 +6,25 @@
   color: var(--Primary-color);
   margin-top: 1.5rem;
   line-height: var( --Text-line-height);
+  
   .infoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     .title {
       margin-bottom: 1rem;
     }
+    
     p {
       margin-bottom: 2rem;
     }
+    
     .btnContainer {
       display: flex;
       gap: 1rem;
       margin-bottom: 2rem;
+    
       .navLinkBtn {
         padding: 0.75rem 1rem;
         border-radius: 0.75rem;
@@ -38,6 +43,7 @@
 
         &.secondary {
           color: var(--Primary-color);
+    
           &:hover {
             background-color: var(--Primary-color);
             color: var(--Secondary-color);
@@ -49,6 +55,7 @@
 
   .imgContainer {
     width: clamp(296px, 100%, 720px);
+    
     img {
       border-radius: 1.5rem;
       width: 100%;
@@ -58,7 +65,9 @@
 @media screen and (min-width: 768px) {
   .heroSection {
     margin-top: 3rem;
+   
     .infoContainer {
+   
       p {
          font-size: 1.25rem;
          margin-bottom: 2.625rem;
@@ -72,10 +81,12 @@
     flex-direction: row;
     gap: clamp(4rem, 100%, 10rem);
     align-items: start;
+   
     .infoContainer {
       flex-direction: column;
       align-items: start;
       max-width: 550px;
+   
       p {
          font-size: 1.5rem;
          margin-bottom: 5rem;
@@ -88,6 +99,7 @@
    .infoContainer {
 
    }
+   
    .btnContainer {
       font-size: 1.5rem;
    }

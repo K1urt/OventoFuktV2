@@ -48,7 +48,7 @@ html {
   }
 
   &.h3 {
-    font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem); /* 18px till 24px mobilt */
+    font-size: clamp(1.25rem, 1rem + 0.5vw, 1.5rem); /* 20px till 24px mobilt */
 
     @media screen and (min-width: 768px) {
       font-size: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem); /* 20px till 24px */
