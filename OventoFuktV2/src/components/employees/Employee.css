@@ -1,0 +1,43 @@
+.employee {
+  .imgContainer {
+    width: 250px;
+    height: 375px;
+    margin-bottom: 0.5rem;
+
+    .img {
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Bra för att bilden inte ska bli ihoptryckt */
+    }
+  }
+
+  .employeeInfo {
+    h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      
+      &.employeePhone {
+        margin-bottom: 0;
+      }
+      
+      span,
+      a {
+        font-weight: normal;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

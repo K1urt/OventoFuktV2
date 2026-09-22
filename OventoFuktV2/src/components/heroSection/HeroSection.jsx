@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Contact from "../../pages/Contact";
-import Employees from "../../pages/Employees";
+import Team from "../../pages/Team";
 import HeroImg from "../../assets/hero.jpg"
 import "./HeroSection.css";
 const HeroSection = () => {
@@ -19,7 +19,7 @@ const HeroSection = () => {
           </Link>
 
           <Link
-            to="/employees"
+            to="/team"
             className="navLinkBtn secondary">
             Vårt Team
           </Link>

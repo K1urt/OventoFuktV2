@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "imgId": "1243",
+    "firstName": "Charlott",
+    "sirName": "Karlström",
+    "role": "Ekonomi / Administration",
+    "mail": "lotta@oventofukt.se",
+    "phone": "08-33 38 01"
+  },
+  {
+    "id": 2,
+    "imgId": "1271",
+    "firstName": "Nicklas",
+    "sirName": "Käller",
+    "role": "Fukttekniker",
+    "mail": "nicklas@oventofukt.se",
+    "phone": "070-251 31 15"
+  },
+  {
+    "id": 3,
+    "imgId": "1264",
+    "firstName": "Andreas",
+    "sirName": "Flink-Tornberg",
+    "role": "Fukttekniker",
+    "mail": "andreas@oventofukt.se",
+    "phone": "073-230 11 58"
+  },
+  {
+    "id": 4,
+    "imgId": "1258",
+    "firstName": "Larry",
+    "sirName": "Koont",
+    "role": "Fukttekniker",
+    "mail": "larry@oventofukt.se",
+    "phone": "073-532 30 33"
+  },
+  {
+    "id": 5,
+    "imgId": "1225",
+    "firstName": "Anders",
+    "sirName": "Henriksson ",
+    "role": "Fukttekniker",
+    "mail": "anders@oventofukt.se",
+    "phone": "073-303 52 52"
+  },
+  {
+    "id": 6,
+    "imgId": "1234",
+    "firstName": "Patrik",
+    "sirName": "Björnemalm",
+    "role": "Fukttekniker",
+    "mail": "patrik@oventofukt.se",
+    "phone": "073-303 52 20"
+  },
+  {
+    "id": 7,
+    "imgId": "1217",
+    "firstName": "Hampus",
+    "sirName": "Björnemalm",
+    "role": "Fukttekniker",
+    "mail": "hampus@oventofukt.se",
+    "phone": "070-740 56 77"
+  },
+  {
+    "id": 8,
+    "imgId": "1232",
+    "firstName": "Mikael",
+    "sirName": "Birgersson",
+    "role": "Fukttekniker",
+    "mail": "mikael@oventofukt.se",
+    "phone": "070-777 23 11"
+  }
+]

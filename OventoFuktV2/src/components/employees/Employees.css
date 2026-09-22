@@ -1,0 +1,48 @@
+.employees {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  align-items: center;
+  color: var(--Primary-color);
+  line-height: var(--Text-line-height);
+
+  /* Gemensam maxbredd eller styrning för innehållet */
+  max-width: 1400px;
+  margin-inline: auto;
+  .h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .layout {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  .employees {
+    .layout {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.625rem 5rem;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .employees {
+    .h1 {
+      margin-bottom: 3rem;
+    }
+    
+    .layout {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .employees {
+    .layout {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2.625rem 4rem;
+    }
+  }
+}

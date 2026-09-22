@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Employees from "./pages/Employees";
+import Team from "./pages/Team";
 
 import Footer from "./components/footer/Footer";
 
@@ -34,7 +34,7 @@ function App() {
         <Routes>
           <Route
             path="/team"
-            element={<Employees />}></Route>
+            element={<Team />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>
