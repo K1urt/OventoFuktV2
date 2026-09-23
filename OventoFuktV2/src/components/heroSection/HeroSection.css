@@ -5,48 +5,81 @@
   flex-direction: column;
   color: var(--Primary-color);
   margin-top: 1.5rem;
-  line-height: var( --Text-line-height);
-  
+  line-height: var(--Text-line-height);
+
   .infoContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    text-align: center;
     .title {
       margin-bottom: 1rem;
     }
-    
+
     p {
       margin-bottom: 2rem;
     }
-    
+
     .btnContainer {
       display: flex;
       gap: 1rem;
       margin-bottom: 2rem;
-    
+
       .navLinkBtn {
+        position: relative;
         padding: 0.75rem 1rem;
         border-radius: 0.75rem;
         text-decoration: none;
         border: 1px solid var(--Primary-color);
+        transition: all 0.3s ease;
+        z-index: 1;
 
+        /* Aktiv klick-effekt för båda */
+        &:active {
+          transform: scale(0.98);
+        }
+
+        /* --- PRIMARY KNAPP (Fylld från start) --- */
         &.primary {
           background-color: var(--Primary-color);
-
           color: var(--Secondary-color);
+
           &:hover {
+            transform: translateY(-2px) scale(1.03);
+            /* Skapar en inverterad färg vid hover eller en ljusare/mörkare ton */
             background-color: var(--Secondary-color);
             color: var(--Primary-color);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
           }
         }
 
+        /* --- SECONDARY KNAPP (Outline med svepande effekt) --- */
         &.secondary {
           color: var(--Primary-color);
-    
-          &:hover {
+          overflow: hidden; /* Krävs för att svepet stannar innanför de rundade hörnen */
+
+          /* Svep-effekten på secondary */
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
             background-color: var(--Primary-color);
-            color: var(--Secondary-color);
+            transition: width 0.3s ease-in-out;
+            z-index: -1;
+            border-radius: calc(0.75rem - 1px);
+          }
+
+          &:hover::before {
+            width: 100%; /* Fyller knappen från vänster till höger */
+          }
+
+          &:hover {
+            transform: translateY(-2px);
+            color: var(--Secondary-color); /* Texten blir sekundärfärgen när bakgrunden fylls */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
           }
         }
       }
@@ -55,7 +88,7 @@
 
   .imgContainer {
     width: clamp(296px, 100%, 720px);
-    
+
     img {
       border-radius: 1.5rem;
       width: 100%;
@@ -65,12 +98,11 @@
 @media screen and (min-width: 768px) {
   .heroSection {
     margin-top: 3rem;
-   
+
     .infoContainer {
-   
       p {
-         font-size: 1.25rem;
-         margin-bottom: 2.625rem;
+        font-size: 1.25rem;
+        margin-bottom: 2.625rem;
       }
     }
   }
@@ -81,27 +113,27 @@
     flex-direction: row;
     gap: clamp(4rem, 100%, 10rem);
     align-items: start;
-   
+
     .infoContainer {
       flex-direction: column;
       align-items: start;
       max-width: 550px;
-   
+      text-align: start;
+
       p {
-         font-size: 1.5rem;
-         margin-bottom: 5rem;
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
       }
     }
   }
 }
 @media screen and (min-width: 1440px) {
   .heroSection {
-   .infoContainer {
+    .infoContainer {
+    }
 
-   }
-   
-   .btnContainer {
+    .btnContainer {
       font-size: 1.5rem;
-   }
+    }
   }
 }

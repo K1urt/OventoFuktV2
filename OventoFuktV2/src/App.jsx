@@ -4,7 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/header/Header";
 
 import Home from "./pages/home/Home";
-import About from "./pages/About";
+import About from "./pages/about/About";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 

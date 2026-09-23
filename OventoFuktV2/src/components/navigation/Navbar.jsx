@@ -14,6 +14,7 @@ const Navbar = () => {
             src={Logo}
             alt="Ovento Fukt logo"
           />
+
           <img
             className="logo logoLg"
             src={LogoLg}
@@ -22,21 +23,21 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <img
-        src="../../"
-        alt=""
-      />
       <DropDown />
+
       <ul className="navbarLinks">
         <li>
           <Link to="/">Hem</Link>
         </li>
+
         <li>
           <Link to="/omOss">Om oss</Link>
         </li>
+
         <li>
           <Link to="/kontakt">Kontakt</Link>
         </li>
+
         <li>
           <Link to="/team">Vårt team</Link>
         </li>
