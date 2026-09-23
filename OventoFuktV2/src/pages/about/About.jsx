@@ -1,11 +1,11 @@
 import React from "react";
-import TeamPicture from "../../assets/oventoFuktTeamet.webp";
+import TeamPicture from "../../assets/sections/oventoFuktTeamet.webp";
 import PartnersSection from "../../components/partnersSection/PartnersSection";
 import "./About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about page">
       <div className="girdLayout">
         <div className="position1">
           <h1 className="title h2">Från anställda till ägare – med fokus på det personliga engagemanget</h1>

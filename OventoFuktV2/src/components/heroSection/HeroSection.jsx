@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Contact from "../../pages/Contact";
-import Team from "../../pages/Team";
-import HeroImg from "../../assets/hero.jpg"
+import HeroImg from "../../assets/sections/hero.webp"
 import "./HeroSection.css";
 const HeroSection = () => {
   return (

@@ -3,7 +3,7 @@ import Employees from "../components/employees/Employees";
 
 const Team = () => {
   return (
-    <div>
+    <div className="page">
       <Employees />
     </div>
   );

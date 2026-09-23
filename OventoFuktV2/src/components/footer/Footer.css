@@ -1,4 +1,100 @@
 .footer {
-  max-width: 1800px;
-  margin-inline: auto;
+  margin-top: 3rem;
+  background-color: var(--Primary-color);
+  color: var(--Secondary-color);
+  padding: 4rem 0.75rem;
+  display: flex;
+
+  .footerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footerContactList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footerItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    .footerIcon {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      margin-top: 0.2rem;
+    }
+
+    .footerText {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      white-space: pre-line;
+
+      .footerLabel {
+        font-weight: normal;
+      }
+
+      .footerLink {
+        color: var(--Secondary-color);
+        text-decoration: underline;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .footerValue {
+        color: var(--Secondary-color);
+      }
+    }
+  }
+
+  .footerCopy {
+    text-align: center;
+    font-style: italic;
+    font-family: serif;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 4rem;
+    padding: 4rem 2rem;
+    .footerContent {
+      /* max-width: 700px; */
+      margin: 0 auto;
+    }
+
+    .footerContactList {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    margin-top: 10rem;
+    padding: 5rem;
+    .footerContent {
+      max-width: 850px; 
+      margin: 0 auto;
+      gap: 3rem;
+
+      .footerContactList {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem 3rem; /* Första värdet är radavstånd, andra är kolumnavstånd */
+      }
+    }
+  }
 }

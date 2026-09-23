@@ -1,19 +1,5 @@
 @import "/src/Reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
-html {
-  scroll-behavior: smooth;
-  margin: 0 0.75rem;
-
-  @media screen and (min-width: 768px) {
-    margin: 0 1.5rem;
-  }
-  @media screen and (min-width: 1024px) {
-    margin: 0 2rem;
-  }
-  @media screen and (min-width: 1440px) {
-    margin: 0 4rem;
-  }
-}
 
 :root {
   font-family: "Source Serif 4", serif;
@@ -25,6 +11,21 @@ html {
   --Text-color: #062c65;
   --Call-to-Action-color: #ffffff;
   --Text-line-height: 1.5;
+}
+
+.page {
+  scroll-behavior: smooth;
+  padding: 0 0.75rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 1.5rem;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 0 2rem;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0 4rem;
+  }
 }
 
 /* Responsiva titlar */
