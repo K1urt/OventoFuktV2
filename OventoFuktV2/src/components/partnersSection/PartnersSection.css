@@ -1,0 +1,35 @@
+.partnersSection {
+  margin-top: 2rem;
+  .h2 {
+    text-align: center;
+  }
+  .partnersContainer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 2rem;
+
+    .partnerLogo {
+      width: clamp(150px, 100%, 300px);
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .partnersSection {
+    margin-top: 4em;
+    .partnersContainer {
+      flex-direction: row;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .partnersSection {
+    margin-top: 5rem;
+    .partnersContainer {
+      justify-content: center;
+    }
+  }
+}
