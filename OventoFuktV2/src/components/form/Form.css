@@ -1,0 +1,113 @@
+.form {
+  margin-top: 2rem;
+  padding: 2rem 0.75rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: var(--Primary-color);
+  color: var(--Secondary-color);
+  border-radius: 1rem;
+
+  & .statusMessage {
+    color: var(--Secondary-color);
+    font-weight: 500;
+
+    &.success {
+      color: #4ade80; /* Ljusgrön som syns bra på mörk bakgrund */
+    }
+
+    &.error {
+      color: #f87171; /* Ljusröd som syns bra på mörk bakgrund */
+    }
+  }
+
+  .h2 {
+    color: var(--Secondary-color);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp(250px, 100%, 506px);
+    gap: 1.5rem;
+  }
+
+  .formGroup {
+    width: clamp(250px, 100%, 400px);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; /* Ger lite luft mellan label och input */
+
+    /* Stil för de nya etiketterna */
+    label {
+      font-size: 0.9rem;
+      color: var(--Secondary-color);
+      padding-left: 0.5rem; /* Matchar indraget på input */
+    }
+
+    input,
+    textarea {
+      font-size: 1rem;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      border: none;
+      outline: none;
+    }
+  }
+  .btnContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+    .submitBtn {
+      width: 208px;
+      font-size: 16px;
+      margin-top: 1rem;
+      background-color: var(--Secondary-color);
+      color: var(--Primary-color);
+      border: 1px solid var(--Primary-color);
+      border-radius: 24px;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: var(--Primary-color);
+        border: 1px solid var(--Secondary-color);
+        color: var(--Call-to-Action-color);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    align-items: center;
+    form {
+      .formGroup {
+        width: 300px;
+      }
+      .btnContainer {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    margin-top: 0;
+    border-radius: 1rem 0 0 1rem;
+    padding: 2.625rem;
+    width: 506px;
+    form {
+      .btnContainer {
+        width: 300px;
+        align-items: end;
+      }
+    }
+  }
+}

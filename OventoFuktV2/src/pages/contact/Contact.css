@@ -1,5 +1,7 @@
 .contact {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
   p {
     color: var(--Primary-color);
     line-height: var(--Text-line-height);
@@ -8,18 +10,12 @@
 @media screen and (min-width: 768px) {
   .contact {
     margin-top: 3rem;
-    display: flex;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .form {
-    background-color: var(--Primary-color);
-    color: #ffff;
-    width: 368px;
-  }
   .contact {
-   
+    flex-direction: row;
     margin-top: 4rem;
     justify-content: center;
   }

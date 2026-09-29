@@ -1,12 +1,11 @@
 import React from "react";
 import "./Contact.css";
 import ContactInfo from "../../components/contactInfo/ContactInfo";
-
+import Form from "../../components/form/Form";
 const Contact = () => {
   return (
     <div className="page contact">
-      <div className="form">form</div>
-
+      <Form />
       <ContactInfo />
     </div>
   );

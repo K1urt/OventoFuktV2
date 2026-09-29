@@ -42,7 +42,7 @@ const ContactInfo = () => {
   return (
     <div className="contactInfo">
       <div>
-        <h1 className="title h2">Våra kontaktuppgifter</h1>
+        <h2 className="title h2">Våra kontaktuppgifter</h2>
         <p>Ring oss eller skicka ett mejl för att få hjälp eller boka en tid!</p>
       </div>
 
