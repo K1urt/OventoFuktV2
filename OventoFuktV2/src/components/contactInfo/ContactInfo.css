@@ -1,0 +1,43 @@
+.contactInfo {
+  margin-top: 3rem;
+  border: 1px solid var(--Primary-color);
+  padding: 2rem 0.75rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .infoRow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    a {
+      color: var(--Primary-color);
+      text-decoration: underline;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .contactInfo {
+    padding: 2.625rem;
+    gap: 2.625rem;
+    p,
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contactInfo {
+    margin-top: 0;
+    width: clamp(608px, 100%, 806px);
+    border-left: none;
+    border-radius: 0 1rem 1rem 0;
+  }
+}

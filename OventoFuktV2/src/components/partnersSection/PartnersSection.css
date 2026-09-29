@@ -6,7 +6,7 @@
   .partnersContainer {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     gap: 2rem;
 
     .partnerLogo {

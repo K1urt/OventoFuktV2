@@ -11,7 +11,7 @@ const HeroSection = () => {
 
         <div className="btnContainer">
           <Link
-            to="/contact"
+            to="/Kontakt"
             className="navLinkBtn primary">
             Kontakta oss!
           </Link>
