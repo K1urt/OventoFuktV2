@@ -6,27 +6,27 @@ import PartnersLogos from "../../data/PartnersLogos";
 const partnersLink = [
   {
     id: 1,
-    title: "Fastighetsägarna",
-    link: "https://www.fastighetsagarna.se/",
-    logo: PartnersLogos["fastighetsagarna"], // Matchar filnamnet fastighetsagarna.webp
-  },
-  {
-    id: 2,
-    title: "Delagott Förvaltning",
-    link: "https://www.delagott.se/",
-    logo: PartnersLogos["delagott"], // Matchar delagott.webp
-  },
-  {
-    id: 3,
     title: "HSB",
     link: "https://www.hsb.se/",
     logo: PartnersLogos["hsb"], // Matchar hsb.webp
   },
   {
-    id: 4,
+    id: 2,
     title: "Driftia",
     link: "https://www.driftia.se/",
     logo: PartnersLogos["driftia"], // Matchar driftia.webp
+  },
+  {
+    id: 3,
+    title: "Fastighetsägarna",
+    link: "https://www.fastighetsagarna.se/",
+    logo: PartnersLogos["fastighetsagarna"], // Matchar filnamnet fastighetsagarna.webp
+  },
+  {
+    id: 4,
+    title: "Delagott Förvaltning",
+    link: "https://www.delagott.se/",
+    logo: PartnersLogos["delagott"], // Matchar delagott.webp
   },
 ];
 

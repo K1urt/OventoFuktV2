@@ -8,11 +8,11 @@ const About = () => {
     <div className="about page">
       <div className="girdLayout">
         <div className="position1">
-          <h1 className="title h2">Från anställda till ägare – med fokus på det personliga engagemanget</h1>
+          <h1 className="title h2">Från anställda till ägare - med fokus på det personliga engagemanget</h1>
           <p>
-            <span>Vår resa började i det välrenommerade bolaget Ovento AB,</span> där vi arbetade nära varandra och våra
-            kunder under många år. När Ovento AB såldes till en större koncern följde vi med på tåget, men vi insåg
-            snabbt att något viktigt gick förlorat på vägen.
+            Vår resa började i det välrenommerade bolaget Ovento AB, där vi arbetade nära varandra och våra kunder under
+            många år. När Ovento AB såldes till en större koncern följde vi med på tåget, men vi insåg snabbt att något
+            viktigt gick förlorat på vägen.
           </p>
 
           <p>
@@ -21,19 +21,18 @@ const About = () => {
           </p>
 
           <p>
-            Vi kände starkt att vi ville göra om och göra rätt. Därför bestämde vi oss,{" "}
-            <span>fyra tidigare kollegor och numera delägare</span>, för att starta <span>Ovento Fukt AB</span>. Vi
-            ville gå tillbaka till rötterna och bygga ett bolag där kunden alltid är i centrum, och där en
-            överenskommelse fortfarande betyder något.
+            Vi kände starkt att vi ville göra om och göra rätt. Därför bestämde vi oss, fyra tidigare kollegor och
+            numera delägare, för att starta Ovento Fukt AB. Vi ville gå tillbaka till rötterna och bygga ett bolag där
+            kunden alltid är i centrum, och där en överenskommelse fortfarande betyder något.
           </p>
         </div>
 
         <div className="position2">
           <h2 className="title h3">Vilka är vi idag?</h2>
           <p>
-            Idag har vi vuxit och <span>är stolta över att vara 8 medarbetare</span> som delar samma vision. Genom att
-            kombinera det mindre bolagets flexibilitet och personliga service med vår mångåriga expertis, kan vi erbjuda
-            trygga och effektiva lösningar för både företag och privatpersoner.
+            Idag har vi vuxit och är stolta över att vara 8 medarbetare som delar samma vision. Genom att kombinera det
+            mindre bolagets flexibilitet och personliga service med vår mångåriga expertis, kan vi erbjuda trygga och
+            effektiva lösningar för både företag och privatpersoner.
           </p>
         </div>
 
