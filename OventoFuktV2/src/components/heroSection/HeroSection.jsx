@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HeroImg from "../../assets/sections/hero.webp"
+import HeroImg from "../../assets/sections/hero.webp";
 import "./HeroSection.css";
+import { NavBtnContact, NavBtnTeam } from "../buttons/Buttons";
 const HeroSection = () => {
   return (
     <div className="heroSection">
@@ -10,22 +11,16 @@ const HeroSection = () => {
         <p>Vi hjälper dig att upptäcka, åtgärda och förebygga fuktskador i din fastighet.</p>
 
         <div className="btnContainer">
-          <Link
-            to="/Kontakt"
-            className="navLinkBtn primary">
-            Kontakta oss!
-          </Link>
-
-          <Link
-            to="/team"
-            className="navLinkBtn secondary">
-            Vårt Team
-          </Link>
+          <NavBtnContact />
+          <NavBtnTeam />
         </div>
       </div>
 
       <div className="imgContainer">
-         <img src={HeroImg}alt="" />
+        <img
+          src={HeroImg}
+          alt=""
+        />
       </div>
     </div>
   );

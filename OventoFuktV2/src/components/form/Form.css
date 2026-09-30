@@ -64,13 +64,13 @@
     align-items: flex-end;
     .submitBtn {
       width: 208px;
-      font-size: 16px;
+      font-size: 1rem;
       margin-top: 1rem;
       background-color: var(--Secondary-color);
       color: var(--Primary-color);
       border: 1px solid var(--Primary-color);
-      border-radius: 24px;
-      padding: 0.75rem 1rem;
+      border-radius: 1.5rem;
+      padding: 1rem 1rem;
       cursor: pointer;
       transition: all 0.3s ease;
 

@@ -11,7 +11,6 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-
     a {
       color: var(--Primary-color);
       text-decoration: underline;
@@ -20,6 +19,9 @@
         opacity: 0.8;
       }
     }
+  }
+  .btnContainer {
+    padding: 1rem 0;
   }
 }
 @media screen and (min-width: 768px) {

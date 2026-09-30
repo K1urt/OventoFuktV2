@@ -1,7 +1,8 @@
 import React from "react";
 import "./ContactInfo.css";
 import ContactIcons from "../../data/ContactIcons";
-
+import { Link } from "react-router-dom";
+import { NavBtnTeam } from "../buttons/Buttons";
 const ContactInfo = () => {
   const contactInfo = [
     {
@@ -69,6 +70,9 @@ const ContactInfo = () => {
           )}
         </div>
       ))}
+      <div className="btnContainer">
+        <NavBtnTeam />
+      </div>
     </div>
   );
 };
