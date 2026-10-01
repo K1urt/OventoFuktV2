@@ -5,7 +5,6 @@ import MenuIcon from "../../assets/icons/menu.svg";
 import MenuCloseIcon from "../../assets/icons/menuClose.svg";
 
 const DropDown = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -44,13 +43,13 @@ const DropDown = () => {
             <Link
               to="/"
               onClick={closeDropdown}>
-               Hem
+              Hem
             </Link>
           </li>
 
           <li>
             <Link
-              to="/omOss"
+              to="/om-oss"
               onClick={closeDropdown}>
               Om oss
             </Link>
