@@ -9,7 +9,7 @@ const Footer = () => {
       icon: FooterIcons["Phone"],
       label: "Växel:",
       value: "08-33 38 01",
-      link: "tel:08333801",
+      link: "tel:+468333801",
     },
     {
       id: "location",
@@ -23,7 +23,7 @@ const Footer = () => {
       icon: FooterIcons["Email"],
       label: "E-post:",
       value: "Kontakt@oventofukt.se",
-      link: "mailto:Kontakt@oventofukt.se",
+      link: "mailto:kontakt@oventofukt.se",
     },
     {
       id: "time",

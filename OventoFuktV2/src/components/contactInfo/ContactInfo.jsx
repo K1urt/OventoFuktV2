@@ -1,7 +1,5 @@
-import React from "react";
 import "./ContactInfo.css";
-import ContactIcons from "../../data/ContactIcons";
-import { Link } from "react-router-dom";
+import ContactIcons from "../../data/ContactIcons";;
 import { NavBtnTeam } from "../buttons/Buttons";
 const ContactInfo = () => {
   const contactInfo = [
@@ -17,14 +15,14 @@ const ContactInfo = () => {
       icon: ContactIcons["Phone"],
       label: "Växel",
       value: "08-33 38 01",
-      link: "tel:08333801",
+      link: "tel:+468333801",
     },
     {
       id: "email",
       icon: ContactIcons["Mail"],
       label: "E-post",
       value: "Kontakt@oventofukt.se",
-      link: "mailto:Kontakt@oventofukt.se",
+      link: "mailto:kontakt@oventofukt.se",
     },
     {
       id: "time",

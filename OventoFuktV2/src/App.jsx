@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import { HelmetProvider } from "react-helmet-async";
 import Header from "./components/header/Header";
 
 import Home from "./pages/home/Home";
@@ -13,31 +14,33 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Header />
-        <Routes>
-          <Route
-            path="/"
-            element={<Home />}></Route>
-        </Routes>
-        <Routes>
-          <Route
-            path="/omOss"
-            element={<About />}></Route>
-        </Routes>
-        <Routes>
-          <Route
-            path="/kontakt"
-            element={<Contact />}></Route>
-        </Routes>
-        <Routes>
-          <Route
-            path="/team"
-            element={<Team />}></Route>
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Header />
+          <Routes>
+            <Route
+              path="/"
+              element={<Home />}></Route>
+          </Routes>
+          <Routes>
+            <Route
+              path="/om-oss"
+              element={<About />}></Route>
+          </Routes>
+          <Routes>
+            <Route
+              path="/kontakt"
+              element={<Contact />}></Route>
+          </Routes>
+          <Routes>
+            <Route
+              path="/team"
+              element={<Team />}></Route>
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </HelmetProvider>
     </>
   );
 }

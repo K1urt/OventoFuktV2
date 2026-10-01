@@ -5,7 +5,7 @@
   color: var(--Text-color);
   line-height: var(--Text-line-height);
   margin-top: 1.5rem;
-  .girdLayout {
+  .gridLayout {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -41,7 +41,7 @@
 @media screen and (min-width: 1024px) {
   .about {
     margin-top: 3rem;
-    .girdLayout {
+    .gridLayout {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0 4rem;
@@ -72,7 +72,7 @@
 @media screen and (min-width: 1440px) {
   .about {
     margin-top: 4rem;
-    .girdLayout {
+    .gridLayout {
       grid-template-areas:
         "position1 position3"
         "position2 position3";

@@ -31,7 +31,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/omOss">Om oss</Link>
+          <Link to="/om-oss">Om oss</Link>
         </li>
 
         <li>

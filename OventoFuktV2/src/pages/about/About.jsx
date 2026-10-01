@@ -2,11 +2,18 @@ import React from "react";
 import TeamPicture from "../../assets/sections/oventoFuktTeamet.webp";
 import PartnersSection from "../../components/partnersSection/PartnersSection";
 import "./About.css";
+import SEO from "../../components/SEO";
 
 const About = () => {
   return (
-    <div className="about page">
-      <div className="girdLayout">
+    <main className="about page">
+      <SEO
+        title="Om oss - Ovento Fukt AB"
+        description="Lär känna Ovento Fukt AB. Vi är specialister på fukt och inomhusmiljö och hjälper dig hitta orsaken till fuktproblem, från mätning till avfuktning."
+        path="/om-oss"
+      />
+
+      <div className="gridLayout">
         <div className="position1">
           <h1 className="title h2">Från anställda till ägare - med fokus på det personliga engagemanget</h1>
           <p>
@@ -45,7 +52,7 @@ const About = () => {
       </div>
 
       <PartnersSection />
-    </div>
+    </main>
   );
 };
 
